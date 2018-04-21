@@ -1,0 +1,10 @@
+<h2>{{ country.name | uppercase }} Details</h2>
+<div><span>id: </span>{{country.id}}</div>
+<div>
+    <label>name:
+      <input [(ngModel)]="country.name" placeholder="name">
+    </label>
+</div>
+<div><span>population: </span>{{country.population}}</div>
+<div><span>capital: </span>{{country.capital}}</div>
+<div><img src="{{country.flag}}" style="width: 50%;" /></div>
