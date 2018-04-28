@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { CountryComponent } from './country/country.component';
 import { CountriesComponent } from './countries/countries.component';
 
+import { CountryService } from './services/country.service';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CountriesComponent } from './countries/countries.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    CountryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
