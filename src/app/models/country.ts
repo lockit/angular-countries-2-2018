@@ -1,5 +1,5 @@
 export class Country {
-  id: number;
+  alpha2Code: string;
   name: string;
   population: number;
   capital: string;
