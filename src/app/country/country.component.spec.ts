@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { Country } from '../models/country'
+
 import { CountryComponent } from './country.component';
 
 describe('CountryComponent', () => {
