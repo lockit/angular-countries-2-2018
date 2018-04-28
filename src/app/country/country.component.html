@@ -5,6 +5,14 @@
       <input [(ngModel)]="country.name" placeholder="name">
     </label>
 </div>
-<div><span>population: </span>{{country.population}}</div>
-<div><span>capital: </span>{{country.capital}}</div>
+<div>
+  <label>population:
+  <input [(ngModel)]="country.population" placeholder="population">
+</label>
+</div>
+<div>
+  <label>capital:
+    <input [(ngModel)]="country.capital" placeholder="capital">
+  </label>
+  </div>
 <div><img src="{{country.flag}}" style="width: 50%;" /></div>
