@@ -8,20 +8,24 @@ import { CountryComponent } from './country/country.component';
 import { CountriesComponent } from './countries/countries.component';
 
 import { CountryService } from './services/country.service';
+import { MessageService } from './services/message.service';
+import { MessagesComponent } from './messages/messages.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CountryComponent,
-    CountriesComponent
+    CountriesComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [
-    CountryService
+    CountryService,
+    MessageService
   ],
   bootstrap: [AppComponent]
 })
