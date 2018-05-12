@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
 
 import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/Observable/of';
+import { of } from 'rxjs/observable/of';
 
 import { Country } from '../models/country';
-import { COUNTRIES } from '../mock/mock-countries';
-
+import { COUNTRIES } from '../mocks/mock-countries';
 
 @Injectable()
 export class CountryService {
 
   constructor() { }
 
-  getCountries(): ObservableCountry[] {
+  getCountries(): Observable<Country[]> {
     return of(COUNTRIES);
   }
+
 
 }
