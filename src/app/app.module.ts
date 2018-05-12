@@ -11,6 +11,8 @@ import { CountriesComponent } from './countries/countries.component';
 import {CountryService} from '../services/country.service'
 =======
 import { CountryService } from './services/country.service';
+import { MessageService } from './services/message.service';
+import { MessagesComponent } from './messages/messages.component';
 
 >>>>>>> lockit
 
@@ -18,14 +20,16 @@ import { CountryService } from './services/country.service';
   declarations: [
     AppComponent,
     CountryComponent,
-    CountriesComponent
+    CountriesComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [
-    CountryService
+    CountryService,
+    MessageService
   ],
   bootstrap: [AppComponent]
 })
