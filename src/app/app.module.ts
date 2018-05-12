@@ -7,14 +7,12 @@ import { AppComponent } from './app.component';
 import { CountryComponent } from './country/country.component';
 import { CountriesComponent } from './countries/countries.component';
 
-<<<<<<< HEAD
-import {CountryService} from '../services/country.service'
-=======
+
 import { CountryService } from './services/country.service';
 import { MessageService } from './services/message.service';
 import { MessagesComponent } from './messages/messages.component';
 
->>>>>>> lockit
+
 
 @NgModule({
   declarations: [
