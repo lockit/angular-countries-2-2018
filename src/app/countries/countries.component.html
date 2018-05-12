@@ -1,10 +1,8 @@
 <h2>I miei stati</h2>
 <ul class="heroes">
-  <li *ngFor="let country of countries"
-      [class.selected]="country === selectedCountry"
-      (click)="onSelect(country)">
-    <span class="badge">{{country.alpha2Code}}</span> {{country.name}}
+  <li *ngFor="let country of countries">
+    <a routerLink="/country/{{country.alpha2Code}}">
+      <span class="badge">{{country.alpha2Code}}</span> {{country.name}}
+    </a>
   </li>
 </ul>
-
-<app-country *ngIf="selectedCountry" [country]="selectedCountry"></app-country>

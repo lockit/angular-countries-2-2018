@@ -10,6 +10,8 @@ import { CountriesComponent } from './countries/countries.component';
 import { CountryService } from './services/country.service';
 import { MessageService } from './services/message.service';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -17,11 +19,13 @@ import { MessagesComponent } from './messages/messages.component';
     AppComponent,
     CountryComponent,
     CountriesComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [
     CountryService,
