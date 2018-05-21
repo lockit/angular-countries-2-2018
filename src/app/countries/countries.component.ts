@@ -27,4 +27,7 @@ export class CountriesComponent implements OnInit {
     this.selectedCountry = country;
   }
 
+  spinStar(id){
+    
+  }
 }

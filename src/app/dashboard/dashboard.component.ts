@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
 
   getCountries(): void {
     this.countryService.getCountries()
-      .subscribe(countries => this.countries = countries.slice(0,4),
+      .subscribe(countries => this.countries = countries.filter(country => country.favourite),
       error =>  console.log('oops', error));
   }
 

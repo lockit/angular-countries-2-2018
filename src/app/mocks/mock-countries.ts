@@ -1,5 +1,6 @@
 import { Country } from '../models/country';
 
+/*
 export const COUNTRIES: Country[] = [
    {
       "flag":"https://restcountries.eu/data/asm.svg",
@@ -190,4 +191,4 @@ export const COUNTRIES: Country[] = [
       "capital":"Mata-Utu",
       "population":11750
    }
-];
+];*/

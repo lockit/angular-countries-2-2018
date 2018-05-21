@@ -41,6 +41,7 @@ export class CountryService {
   toggleFavourite(id: string) {
     var tmp_country = this.countries.find(country => country.alpha2Code === id);
     tmp_country.favourite = !tmp_country.favourite;
+    console.log("Country favourite toggle");
   }
 
   getCountries(): Observable<Country[]> {

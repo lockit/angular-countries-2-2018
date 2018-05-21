@@ -5,7 +5,10 @@
       <span class="badge"
             [ngStyle]="{'background-image' : 'url(' + country.flag + ')' } ">
             &nbsp;
-      </span> {{country.name}} [{{country.alpha2Code}}]
+      </span>
+    </a> <i [spinning-star]="country" (click)="countryService.toggleFavourite(country.alpha2Code)"></i>
+     <a routerLink="/country/{{country.alpha2Code}}">
+        {{country.name}} [{{country.alpha2Code}}]
     </a>
   </li>
 </ul>

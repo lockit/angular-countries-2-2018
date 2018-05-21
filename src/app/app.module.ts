@@ -17,6 +17,7 @@ import { InMemoryDataService } from './services/in-memory-data.service';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SpinningStarDirective } from './directives/spinning-star.directive';
 
 
 
@@ -26,7 +27,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CountryComponent,
     CountriesComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    SpinningStarDirective
   ],
   imports: [
     BrowserModule,
