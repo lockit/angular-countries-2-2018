@@ -1,9 +1,10 @@
 <h1>{{ title }}</h1>
 <nav>
-  <!-- a routerLink="/dashboard">Dashboard</a -->
+  <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/countries">Countries</a>
+  <a (click)="reloadCountries()">Ricarica stati</a>
 </nav>
 <router-outlet></router-outlet>
 <app-messages></app-messages>
 
-<footer style="margin-top: 20px;">&copy; Marco</footer>
+<footer style="margin-top: 20px;">&copy; Lockit</footer>

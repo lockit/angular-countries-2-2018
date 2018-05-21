@@ -47,6 +47,13 @@ h4 {
 .grid-pad > [class*='col-']:last-of-type {
   padding-right: 20px;
 }
+.hero {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.hero h4 {
+  background: #007FFF;
+}
 @media (max-width: 600px) {
   .module {
     font-size: 10px;

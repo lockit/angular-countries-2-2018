@@ -2,7 +2,10 @@
 <ul class="heroes">
   <li *ngFor="let country of countries">
     <a routerLink="/country/{{country.alpha2Code}}">
-      <span class="badge">{{country.alpha2Code}}</span> {{country.name}}
+      <span class="badge"
+            [ngStyle]="{'background-image' : 'url(' + country.flag + ')' } ">
+            &nbsp;
+      </span> {{country.name}} [{{country.alpha2Code}}]
     </a>
   </li>
 </ul>
