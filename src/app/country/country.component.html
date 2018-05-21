@@ -1,20 +1,22 @@
-<h2>{{ country.name | uppercase }}</h2>
-<div><span>id: </span>{{country.alpha2Code}}</div>
-<div>
-    <label>name:
-      <input [(ngModel)]="country.name" placeholder="name">
-    </label>
-</div>
-<div>
-  <label>population:
-  <input [(ngModel)]="country.population" placeholder="population">
-</label>
-</div>
-<div>
-  <label>capital:
-    <input [(ngModel)]="country.capital" placeholder="capital">
+<div *ngIf="country">
+  <h2>{{ country.name | uppercase }}</h2>
+  <div><span>id: </span>{{country.alpha2Code}}</div>
+  <div>
+      <label>name:
+        <input [(ngModel)]="country.name" placeholder="name" />
+      </label>
+  </div>
+  <div>
+    <label>population:
+    <input [(ngModel)]="country.population" placeholder="population" />
   </label>
   </div>
-<div><img src="{{country.flag}}" style="width: 50%;" /></div>
-
+  <div>
+    <label>capital:
+      <input [(ngModel)]="country.capital" placeholder="capital" />
+    </label>
+    </div>
+  <div><img src="{{country.flag}}" style="width: 50%;" /></div>
+</div>
+<button (click)="save()">Salva</button>
 <button (click)="goBack()">Torna indietro</button>

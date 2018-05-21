@@ -4,4 +4,5 @@ export class Country {
   population: number;
   capital: string;
   flag: string;
+  favourite: boolean = false;
 }

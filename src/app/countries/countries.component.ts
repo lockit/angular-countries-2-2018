@@ -12,9 +12,7 @@ export class CountriesComponent implements OnInit {
   countries: Country[];
   selectedCountry: Country;
 
-  constructor(private countryService: CountryService) {
-
-  }
+  constructor(private countryService: CountryService) { }
 
   ngOnInit() {
     this.getCountries();

@@ -31,6 +31,11 @@ export class CountryComponent implements OnInit {
       .subscribe(country => this.country = country);
   }
 
+  save(): void {
+    this.countryService.updateCountry(this.country)
+      .subscribe(() => this.goBack());
+  }
+
   goBack() {
     this.location.back();
   }
